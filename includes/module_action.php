@@ -52,14 +52,14 @@ if($service != "") {
         
         $exec = "/etc/init.d/nessusd start > /dev/null 2 &";
         //exec("$bin_danger \"$exec\"" ); //DEPRECATED
-        exec_fruitywifi($exec);
+        exec_blackbulb($exec);
         
     } else if($action == "stop") {
         // STOP MODULE
 
         $exec = "/etc/init.d/nessusd stop";
         //exec("$bin_danger \"$exec\"" ); //DEPRECATED
-        exec_fruitywifi($exec);
+        exec_blackbulb($exec);
 
     }
 

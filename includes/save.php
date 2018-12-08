@@ -38,16 +38,16 @@ $nessus_pass = $_POST["nessus_pass"];
 // ngrep options
 if ($type == "opt_nessus") {
     $exec = "/bin/sed -i 's/opt_nessus_server.*/opt_nessus_server = \\\"$nessus_server\\\";/g' options_config.php";
-    //exec("/usr/share/FruityWifi/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
-    $output = exec_fruitywifi($exec);
+    //exec("/usr/share/BlackBulb/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
+    $output = exec_blackbulb($exec);
 	
     $exec = "/bin/sed -i 's/opt_nessus_user.*/opt_nessus_user = \\\"$nessus_user\\\";/g' options_config.php";
-    //exec("/usr/share/FruityWifi/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
-    $output = exec_fruitywifi($exec);
+    //exec("/usr/share/BlackBulb/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
+    $output = exec_blackbulb($exec);
 	
     $exec = "/bin/sed -i 's/opt_nessus_pass.*/opt_nessus_pass = \\\"$nessus_pass\\\";/g' options_config.php";
-    //exec("/usr/share/FruityWifi/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
-    $output = exec_fruitywifi($exec);
+    //exec("/usr/share/BlackBulb/bin/danger \"" . $exec . "\"", $output); //DEPRECATED
+    $output = exec_blackbulb($exec);
 	
     header('Location: ../index.php?tab=2');
     exit;

@@ -22,7 +22,7 @@
  */
 
 /**
- * Extended by @xtr4nge for @FruityWifi project
+ * Extended by @xtr4nge for @BlackBulb project
  * 2014-10-14
  */
 class NessusInterface

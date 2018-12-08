@@ -1,7 +1,7 @@
 module_nessus
 ================
 
-FruityWifi Nessus module
+BlackBulb Nessus module
 
 
 
